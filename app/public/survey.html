@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" 
+    crossorigin="anonymous">
+
+</head>
+<body>
+<form action="/api/routes"class="form-horizontal">
+  <fieldset>
+    <legend>Friend Match Survey</legend>
+    <h2>Using a scale of ( 1= Not for me, to 5= Love it!! ), 
+        please answer these survey questions as honestly as possible.
+    </h2>
+    <div class="name_input" style="margin-left: 20px">
+      <div class="form-group">
+        <label for="name" class="col-lg-2 control-label">Name:<br></label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="inputEmail" placeholder="John Doe">
+        </div>
+      </div>
+    </div>
+    <div class="description" style="margin-left: 20px">
+      <div class="form-group">
+        <label for="textArea" class="col-lg-2 control-label">Description:<br></label>
+        <div class="col-lg-10">
+          <textarea class="form-control" rows="3" id="textArea"></textarea>
+        </div>
+      </div>
+    </div>
+      <label for="select" class="col-lg-2 control-label">Do you like sweets?</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    <label for="select" class="col-lg-2 control-label">Did you like the Mad Max remake?</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">Oreos with no milk.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">Walking around barefoot.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">When food on your plate mixes with each other.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">People watching.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">Dogs.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">Playing video games.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">The allure of Starbucks.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <label for="select" class="col-lg-2 control-label">Debating different topics.</label>
+      <div class="col-lg-10">
+        <select class="form-control" id="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</body>
+<script type="text/javascript">
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+      var newFriend = {
+        name: $("#name").val().trim(),
+
+      }
+  })
+</script>
+</html>
